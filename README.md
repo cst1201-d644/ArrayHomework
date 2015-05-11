@@ -3,6 +3,7 @@
 ## Details
 
 Create a Java program that performs the following:
+
 1. Ask user for the number of students.
 1. Ask the user for each of the students’ grades.
 1. Print out the class average and standard deviation.
