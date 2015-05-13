@@ -19,28 +19,28 @@ public class ArrayHomework {
     
     public static void main(String[] args) {
       
-      int numTests;    
-      int[] tests;      
+      int numStudent;    
+      int[] grades;      
       int sum = 0;
       double average;
       
       Scanner key = new Scanner(System.in);
 
       System.out.print("How many students in your class? ");
-      numTests = key.nextInt();
-      tests = new int[numTests];
+      numStudent = key.nextInt();
+      grades = new int[numStudent];
 
-      for (int index = 0; index < tests.length; index++)
+      for (int index = 0; index < grades.length; index++)
       {
          System.out.print("Enter student" +(index + 1) + "'s grade"+ ": ");
-      tests[index] = key.nextInt();
-      sum= (sum + tests[index]);  }
-      average = (double)sum /numTests;
+      grades[index] = key.nextInt();
+      sum= (sum + grades[index]);  }
+      average = (double)sum /numStudent;
 
       System.out.println();
       System.out.println("Here are the grades you entered:");
-      for (int index = 0; index < tests.length; index++)
-      { System.out.print(tests[index] + "   ");
+      for (int index = 0; index < grades.length; index++)
+      { System.out.print(grades[index] + "   ");
       }
       System.out.println();
       System.out.println("The average is " + average );
