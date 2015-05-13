@@ -18,7 +18,7 @@ public class ArrayHomework {
             double sd = 0.0;
 
             Scanner keyboard = new Scanner(System.in);
-            System.out.print("The number of students? ");
+            System.out.print("The many students are there? ");
             int numStudents = keyboard.nextInt();
             int[] students = new int[numStudents];
 
