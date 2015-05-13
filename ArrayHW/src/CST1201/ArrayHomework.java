@@ -6,7 +6,7 @@ import java.util.Scanner;
  *
  * @author Francisco Latacela
  */
-public class ArrayHW {
+public class ArrayHomework {
 
     /**
      * @param args the command line arguments
