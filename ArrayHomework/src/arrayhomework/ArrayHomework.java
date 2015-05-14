@@ -19,6 +19,9 @@ public class ArrayHomework {
     public static void main(String[] args) {
         int sum = 0;
         int numOfStudents;
+        double average = 0.0;
+        double calculation = 0.0;
+
         Scanner keyboard = new Scanner(System.in);
 
         System.out.println("Enter the number of students: ");
@@ -26,7 +29,7 @@ public class ArrayHomework {
         int[] students = new int[numOfStudents];
 
         for (int i = 0; i < numOfStudents; i++) {
-            System.out.println("Enter the grades for each student correspondingly: ");
+            System.out.println("Enter the grade for each student: ");
             students[i] = keyboard.nextInt();
 
             sum = sum + students[i];
@@ -34,11 +37,16 @@ public class ArrayHomework {
         }
         System.out.println();
 
-        double average = 0.0;
         average = sum / students.length;
         System.out.println("The class average is " + average + ".");
-        
-        
+
+        for (int i = 0; i < numOfStudents; i++) {
+            calculation += ((students[i] - average) * (students[i] - average) / numOfStudents);
+        }
+
+        double standardDev = Math.sqrt(calculation);
+
+        System.out.println("The standard deviation of the class average is: " + standardDev);
 
     }
 
